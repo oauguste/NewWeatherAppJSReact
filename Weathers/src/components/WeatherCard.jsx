@@ -10,7 +10,7 @@ const WeatherCard = () => {
   const [weatherData, setWeatherData] = React.useState([]);
   const limit = 5;
   const key = "cf06300133c4452ccaa95bb3eb06f19b";
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName.city}&limit=${limit}&appid=${key}&units=imperial`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName.city}&limit=${limit}&appid=${key}&units=imperial`;
   const [error, setError] = React.useState(null); // added error state
 
   const fetchData = async () => {
