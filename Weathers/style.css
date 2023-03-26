@@ -8,6 +8,7 @@ body {
   background-image: url("../Weathers/src/assets/pexels-la-miko-3616764.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .weather--card {
