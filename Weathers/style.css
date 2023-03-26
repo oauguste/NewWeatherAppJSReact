@@ -12,8 +12,10 @@ body {
 
 .weather--card {
   display: flex;
+  position: relative;
   flex: auto;
-  width: 60%;
+  width: 90%;
+  max-width: 720px;
   align-content: center;
   flex-direction: column;
   justify-content: space-between;
@@ -84,6 +86,7 @@ button {
   border-radius: 5px;
   box-shadow: 2px 2px 5px #ccc;
   background-color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 button:hover {
@@ -95,11 +98,101 @@ button:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid beige;
 }
 
 .day-data {
   text-transform: capitalize;
   font-weight: 600;
   font-size: 25px;
+}
+@media screen and (max-width: 475px) {
+  .weather--card {
+    display: flex;
+    position: relative;
+    flex: auto;
+    width: 90%;
+    max-width: 720px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: rgba(54, 16, 1, 0.8);
+    margin: 0 auto;
+    margin-top: 0.6rem;
+
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    opacity: 0.9; /* adjust the opacity value to your liking */
+    box-shadow: 0px 5px 20px 10px rgba(54, 16, 1, 0.5);
+  }
+  .day-data {
+    padding: 10px;
+    font-weight: 200;
+  }
+  .city--name {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .temp--data {
+    font-weight: 600;
+    font-size: 3.5rem;
+  }
+  input {
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(16, 0, 31, 0.6);
+  }
+  button {
+    color: #333;
+    width: auto;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-bottom: 0.5rem;
+    border: 1px double rgba(16, 0, 31, 0.8);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    background-color: #fff;
+  }
+
+  .day-data {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .day--data--container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0.1rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .weather--card {
+    display: flex;
+    position: relative;
+    flex: auto;
+    width: 90%;
+    max-width: 720px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    color: rgba(54, 16, 1, 0.8);
+    margin: 0 auto;
+    margin-top: 0.6rem;
+
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    opacity: 0.9; /* adjust the opacity value to your liking */
+    box-shadow: 0px 5px 20px 10px rgba(54, 16, 1, 0.5);
+  }
 }
